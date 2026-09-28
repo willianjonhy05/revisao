@@ -242,3 +242,21 @@ while True:
         print("Erro: Digite apenas números válidos.")
 
 
+
+
+def fatorial(n):
+    if n < 0:
+        return "Não existe fatorial de número negativo."
+    if n == 0 or n == 1:
+        return 1
+    
+    resultado = 1
+    for i in range(2, n + 1):
+        resultado *= i
+        
+    return resultado
+
+# Exemplo de uso:
+print(fatorial(5))  # Retorna 120 (pois 5 x 4 x 3 x 2 x 1 = 120)
+
+
